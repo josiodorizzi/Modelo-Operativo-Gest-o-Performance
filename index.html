@@ -1,1 +1,472 @@
-[object Object]
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dashboard Executivo | Modelo Operativo UNIASSELVI — V10 Estrutura oficial de coordenadores</title>
+<style>
+:root{--navy:#003B71;--blue:#0066A6;--cyan:#00A6C7;--gold:#F5B335;--bg:#F2F6FA;--ink:#1e293b;--muted:#66758a;--line:#e2e8f0;--white:#fff;--green:#16865b;--yellow:#c48a12;--red:#c44545;--shadow:0 8px 28px rgba(19,43,73,.08)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);font-size:16px}button,input,select,textarea{font:inherit}.shell{max-width:1500px;margin:auto;padding:22px}.top{background:linear-gradient(115deg,#003B71,#0066A6);color:#fff;border-radius:18px;padding:25px 28px;box-shadow:var(--shadow);position:relative;overflow:hidden}.top:after{content:"";position:absolute;width:300px;height:300px;border:1px solid #ffffff20;border-radius:50%;right:-80px;top:-170px;box-shadow:0 0 0 35px #ffffff0b,0 0 0 70px #ffffff08}.brand{font-size:12px;letter-spacing:2px;font-weight:800;color:#a9d9ed}.top h1{font-size:32px;margin:9px 0 5px}.top p{margin:0;color:#d7e8f3;font-size:16px}.topline{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;position:relative;z-index:1}.tag{border:1px solid #ffffff45;border-radius:30px;padding:8px 13px;font-size:12px;white-space:nowrap}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.tab{border:1px solid var(--line);background:#fff;color:var(--navy);padding:12px 18px;border-radius:10px;cursor:pointer;font-weight:750;font-size:15px}.tab.active{background:#003B71;color:#fff;border-color:#003B71}.filters,.panel,.kpi{background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}.filters{padding:14px;display:flex;gap:12px;align-items:end;flex-wrap:wrap;margin-bottom:16px}.field{display:flex;flex-direction:column;gap:6px;min-width:160px;flex:1}.field label,.small-label{font-size:13px;color:var(--muted);font-weight:800;text-transform:uppercase;letter-spacing:.5px}.field select,.field input,.field textarea{border:1px solid #d6dee8;border-radius:9px;padding:10px;background:#fff;color:var(--ink);min-width:0}.btn{border:0;background:var(--blue);color:white;padding:10px 14px;border-radius:9px;cursor:pointer;font-weight:700}.btn.secondary{background:#eaf2f8;color:var(--navy);border:1px solid #d9e5ef}.btn.dark{background:var(--navy)}.grid{display:grid;gap:14px}.kpis{grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:16px}.kpi{padding:17px 18px}.kpi .label{font-size:13px;color:var(--muted);font-weight:800;text-transform:uppercase;letter-spacing:.6px}.kpi .value{font-size:31px;font-weight:800;color:var(--navy);margin-top:8px}.kpi .hint{font-size:14px;color:var(--muted);margin-top:4px}.two{grid-template-columns:1.1fr .9fr}.panel{padding:18px;margin-bottom:15px}.panel h2{font-size:19px;margin:0 0 5px;color:var(--navy)}.sub{font-size:14px;color:var(--muted);margin:0 0 15px}.barrow{display:grid;grid-template-columns:145px 1fr 60px;gap:10px;align-items:center;margin:12px 0;font-size:12px}.bar{height:10px;background:#edf2f7;border-radius:20px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--cyan));border-radius:20px}.legend{display:flex;gap:12px;flex-wrap:wrap;font-size:11px;color:var(--muted)}.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:5px}.tablewrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:14px;min-width:720px}th{text-align:left;color:#fff;background:#0875b9;padding:13px 11px;font-size:12px;text-transform:uppercase;letter-spacing:.5px;position:sticky;top:0}td{padding:13px 11px;border-bottom:1px solid #edf1f5}tr:hover td{background:#f9fbfd}.rank{font-weight:800;color:var(--blue)}.pill{display:inline-block;border-radius:30px;padding:5px 9px;font-size:10px;font-weight:800;background:#edf2f7;color:#617086}.pill.green{background:#e4f5ed;color:#14764e}.pill.yellow{background:#fff4d9;color:#9a6a08}.pill.red{background:#fde9e9;color:#b13c3c}.muted{color:var(--muted)}.hidden{display:none!important}.detail-head{display:flex;justify-content:space-between;gap:15px;align-items:flex-start;flex-wrap:wrap}.detail-title{font-size:25px;color:var(--navy);font-weight:800}.scorebox{background:#f0f6fb;border-radius:12px;padding:12px 16px;text-align:center;min-width:115px}.scorebox strong{font-size:27px;color:var(--navy)}.dimensions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.dim{border:1px solid var(--line);border-radius:11px;padding:13px}.dim-head{display:flex;justify-content:space-between;gap:8px;font-weight:700;font-size:15px;margin-bottom:9px}.dim input{width:85px;border:1px solid #d6dee8;border-radius:8px;padding:8px}.dim small{display:block;color:var(--muted);font-size:13px;line-height:1.45;margin-top:7px}.formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.formgrid .field{min-width:0}.formgrid textarea{min-height:80px;resize:vertical}.action-card{border:1px solid var(--line);border-radius:11px;padding:13px;margin:10px 0}.action-top{display:flex;justify-content:space-between;gap:10px}.action-card input,.action-card textarea,.action-card select{width:100%;border:1px solid #d6dee8;border-radius:8px;padding:8px;margin-top:6px}.notice{padding:12px 14px;background:#fff8e8;border:1px solid #f3dfac;border-radius:10px;color:#775812;font-size:12px;line-height:1.5}.empty{padding:25px;text-align:center;color:var(--muted);background:#f8fafc;border:1px dashed #ccd6e2;border-radius:12px}.footer{font-size:12px;color:#7b8797;padding:10px 2px 25px}.section-title{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:18px 0 10px}.section-title h2{font-size:17px;color:var(--navy);margin:0}.mini{font-size:13px;color:var(--muted)}@media(max-width:900px){.kpis{grid-template-columns:repeat(2,1fr)}.two{grid-template-columns:1fr}.topline{display:block}.tag{display:inline-block;margin-top:14px}}@media(max-width:600px){.shell{padding:12px}.top{padding:20px}.top h1{font-size:25px}.kpis{grid-template-columns:repeat(2,1fr)}.kpi .value{font-size:22px}.dimensions,.formgrid{grid-template-columns:1fr}.barrow{grid-template-columns:105px 1fr 45px}.filters .field{min-width:130px}}
+@media print{body{background:#fff}.shell{max-width:none;padding:0}.tabs,.filters,.btn,.no-print{display:none!important}.panel,.kpi,.top{box-shadow:none;break-inside:avoid}.top{background:#132b49!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+
+/* REVISAO VISUAL V2 — tipografia ampliada e identidade institucional */
+:root{
+ --navy:#003B71; --blue:#0066A6; --cyan:#00A6C7; --gold:#F5B335;
+ --bg:#F2F6FA; --ink:#1E293B; --muted:#536579; --line:#D8E2EC;
+}
+body{font-size:17px!important}
+.top{background:linear-gradient(115deg,#003B71 0%,#0066A6 68%,#00A6C7 130%)!important}
+.brand{font-size:14px!important;letter-spacing:2.2px}
+.top h1{font-size:34px!important;line-height:1.2}
+.top p{font-size:17px!important}
+.tag{font-size:14px!important}
+.tab{font-size:16px!important;padding:13px 19px!important}
+.field label,.small-label{font-size:14px!important}
+.field select,.field input,.field textarea{font-size:16px!important;padding:12px!important}
+.btn{font-size:15px!important;padding:12px 17px!important}
+.kpi .label{font-size:14px!important}
+.kpi .value{font-size:33px!important}
+.kpi .hint{font-size:14px!important}
+.panel h2{font-size:20px!important}
+.sub{font-size:15px!important;line-height:1.45}
+table{font-size:15px!important}
+th{font-size:13px!important;background:#0066A6!important;color:#fff!important;padding:14px 12px!important}
+td{font-size:15px!important;padding:14px 12px!important}
+.pill{font-size:12px!important;padding:6px 10px!important}
+.barrow{font-size:14px!important}
+.detail-title{font-size:27px!important}
+.scorebox strong{font-size:31px!important}
+.dim-head{font-size:16px!important}
+.dim small{font-size:14px!important;line-height:1.5}
+.action-card{font-size:15px!important}
+.mini{font-size:14px!important}
+.footer{font-size:13px!important}
+.section-title h2{font-size:20px!important}
+input,select,textarea{font-size:15px}
+@media(max-width:600px){
+ .top h1{font-size:27px!important}
+ .top p{font-size:15px!important}
+ .kpi .value{font-size:25px!important}
+ table,td{font-size:14px!important}
+}
+
+
+/* IDENTIDADE VISUAL AMARELA UNIASSELVI — V3 */
+:root{
+ --navy:#26364A;
+ --blue:#E5A900;
+ --cyan:#F6C744;
+ --gold:#F5B51B;
+ --bg:#FFFDF5;
+ --ink:#263238;
+ --muted:#65717D;
+ --line:#E9DFC0;
+ --green:#16865b;
+ --yellow:#C48A12;
+ --red:#C44545;
+}
+body{background:#FFFDF5!important;color:#263238!important}
+.top{
+ background:linear-gradient(115deg,#F2B705 0%,#FFD54A 58%,#F7C52E 100%)!important;
+ color:#263238!important;
+}
+.brand{color:#34465A!important}
+.top p{color:#3E4B58!important}
+.tag{border-color:#6E5A1B66!important;color:#263238!important;background:#FFFFFF35}
+.tab{background:#fff!important;color:#34465A!important;border-color:#E7D79F!important}
+.tab.active{background:#F2B705!important;color:#263238!important;border-color:#D9A300!important}
+.btn{background:#F2B705!important;color:#263238!important;border:1px solid #D9A300!important}
+.btn.secondary{background:#FFF7D9!important;color:#34465A!important;border:1px solid #E8D58D!important}
+.btn.dark{background:#34465A!important;color:#fff!important;border-color:#34465A!important}
+th{background:#F2B705!important;color:#263238!important}
+.bar i{background:linear-gradient(90deg,#E5A900,#FFD54A)!important}
+.kpi .value{color:#34465A!important}
+.scorebox{background:#FFF5CC!important}
+.scorebox strong{color:#34465A!important}
+.rank{color:#B17B00!important}
+.pill{background:#F7F0D9!important;color:#65521C!important}
+.pill.green{background:#E4F5ED!important;color:#14764E!important}
+.pill.yellow{background:#FFF1C2!important;color:#946800!important}
+.pill.red{background:#FDE9E9!important;color:#B13C3C!important}
+.panel,.kpi,.filters{border-color:#E9DFC0!important}
+.field select:focus,.field input:focus,.field textarea:focus,
+.dim input:focus,.action-card input:focus,.action-card textarea:focus,
+.action-card select:focus{outline:2px solid #F2B705!important;outline-offset:1px}
+.brand{font-weight:900}
+@media print{
+ .top{background:#F2B705!important;color:#263238!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+ th{background:#F2B705!important;color:#263238!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+
+
+/* FUNCIONALIDADE DOS FILTROS E RELATORIOS */
+#filterFeedback{font-size:13px;color:#5b6674;padding-left:2px}
+#printHeader{display:none}
+@media print{
+ #printHeader{display:block!important}
+ .filters,#filterFeedback,.tabs{display:none!important}
+ .view.hidden{display:none!important}
+ .view:not(.hidden){display:block!important}
+ body{background:#fff!important}
+}
+
+
+/* CABECALHO V5 — sem frase auxiliar e com logotipo UNIASSELVI */
+.topline{align-items:center!important}
+.brand-logo-wrap{
+ display:flex;align-items:center;justify-content:center;
+ min-width:190px;max-width:235px;padding:8px 12px;
+ background:transparent;border:0;
+}
+.brand-logo{
+ display:block;width:100%;max-width:210px;height:auto;max-height:82px;
+ object-fit:contain;mix-blend-mode:multiply;
+}
+@media(max-width:900px){
+ .brand-logo-wrap{justify-content:flex-start;margin-top:12px;max-width:180px;min-width:150px}
+ .brand-logo{max-width:160px;max-height:65px}
+}
+@media print{
+ .brand-logo{mix-blend-mode:multiply}
+}
+
+
+/* V6 — LOGO ENVIADA PELO USUARIO NO CANTO SUPERIOR DIREITO */
+.topline{position:relative!important;align-items:flex-start!important}
+.brand-logo-wrap{
+ position:absolute!important;right:0!important;top:0!important;
+ display:flex!important;align-items:center!important;justify-content:flex-end!important;
+ width:220px!important;max-width:28%!important;min-width:150px!important;
+ padding:0!important;margin:0!important;background:transparent!important;
+}
+.brand-logo{
+ display:block!important;width:100%!important;max-width:220px!important;
+ max-height:100px!important;height:auto!important;object-fit:contain!important;
+ mix-blend-mode:normal!important;border-radius:4px!important;
+}
+.topline>div:first-child{padding-right:245px!important}
+@media(max-width:900px){
+ .brand-logo-wrap{position:relative!important;right:auto!important;top:auto!important;
+  margin:12px 0 0 auto!important;width:170px!important;max-width:45%!important}
+ .brand-logo{max-width:170px!important;max-height:75px!important}
+ .topline>div:first-child{padding-right:0!important}
+}
+@media(max-width:600px){
+ .brand-logo-wrap{width:145px!important;max-width:55%!important}
+ .brand-logo{max-width:145px!important;max-height:65px!important}
+}
+
+
+/* V7 — AREA DA LOGO PREENCHIDA, SEM MARGENS OU CARTAO */
+.top{min-height:148px!important;padding:24px 28px!important}
+.topline{min-height:100px!important;align-items:stretch!important}
+.brand-logo-wrap{
+ position:absolute!important;right:0!important;top:-24px!important;bottom:-24px!important;
+ width:36%!important;max-width:420px!important;min-width:280px!important;
+ height:auto!important;padding:0!important;margin:0!important;
+ display:block!important;overflow:hidden!important;
+ background:#05090A!important;border:0!important;border-radius:0 18px 18px 0!important;
+}
+.brand-logo{
+ position:absolute!important;inset:0!important;display:block!important;
+ width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;
+ object-fit:cover!important;object-position:center center!important;
+ mix-blend-mode:normal!important;border:0!important;border-radius:0!important;
+}
+.topline>div:first-child{padding-right:40%!important;display:flex;flex-direction:column;justify-content:center}
+@media(max-width:900px){
+ .top{min-height:0!important;padding:20px!important}
+ .topline{min-height:0!important;display:flex!important;flex-direction:column!important}
+ .brand-logo-wrap{
+  position:relative!important;top:auto!important;right:auto!important;bottom:auto!important;
+  width:100%!important;max-width:none!important;min-width:0!important;height:145px!important;
+  margin:14px 0 -20px!important;border-radius:0 0 14px 14px!important;
+ }
+ .brand-logo{width:100%!important;height:100%!important;object-fit:cover!important;object-position:center 48%!important}
+ .topline>div:first-child{padding-right:0!important}
+}
+@media(max-width:600px){
+ .brand-logo-wrap{height:125px!important}
+}
+
+
+/* V8 — NOVA LOGO AMARELA UNIASSELVI */
+.top{
+ background:#FFDA00!important;
+ color:#263238!important;
+}
+.topline{position:relative!important;align-items:center!important}
+.brand-logo-wrap{
+ position:absolute!important;right:0!important;top:0!important;bottom:0!important;
+ width:210px!important;max-width:30%!important;min-width:150px!important;
+ display:flex!important;align-items:center!important;justify-content:flex-end!important;
+ padding:0!important;margin:0!important;overflow:hidden!important;
+ background:#FFDA00!important;border:0!important;border-radius:0!important;
+}
+.brand-logo{
+ position:static!important;display:block!important;
+ width:auto!important;height:auto!important;
+ max-width:100%!important;max-height:112px!important;
+ object-fit:contain!important;object-position:center!important;
+ mix-blend-mode:normal!important;border:0!important;border-radius:0!important;
+}
+.topline>div:first-child{padding-right:230px!important}
+@media(max-width:900px){
+ .topline{display:flex!important;flex-direction:column!important;align-items:flex-start!important}
+ .topline>div:first-child{padding-right:0!important}
+ .brand-logo-wrap{
+  position:relative!important;right:auto!important;top:auto!important;bottom:auto!important;
+  width:100%!important;max-width:none!important;min-width:0!important;height:120px!important;
+  justify-content:center!important;margin:12px 0 0!important;
+ }
+ .brand-logo{max-height:112px!important;max-width:100%!important}
+}
+
+
+/* V9 — INDICADORES ESTRATIFICADOS DENTRO DE CADA DIMENSAO */
+.sub-indicators{display:flex;flex-direction:column;gap:9px;margin-top:12px}
+.sub-indicator{display:grid;grid-template-columns:minmax(0,1fr) 82px;gap:10px;align-items:center;padding:8px 9px;background:#fffdf6;border:1px solid #eee3bf;border-radius:8px}
+.sub-indicator label{font-size:13px;line-height:1.35;color:#34465A;font-weight:600}
+.sub-indicator input{width:82px;min-width:0;border:1px solid #d6dee8;border-radius:7px;padding:8px;font-size:14px}
+.dimension-result{display:flex;justify-content:space-between;align-items:center;margin-top:11px;padding-top:9px;border-top:1px solid #eadfbf;font-size:12px;color:#65717D}
+.dimension-result strong{color:#34465A;font-size:14px}
+.legacy-note{display:block;margin-top:7px;color:#8a6b18;font-size:11px;line-height:1.4}
+@media(max-width:600px){.sub-indicator{grid-template-columns:minmax(0,1fr) 72px}.sub-indicator input{width:72px}}
+
+</style></head>
+<body><div class="shell">
+<header class="top"><div class="topline"><div><div class="brand">UNIASSELVI · OPERAÇÕES PRÓPRIAS</div><h1>Modelo Operativo | Gestão & Performance</h1></div><div class="brand-logo-wrap"><img class="brand-logo" src="data:image/png;base64,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" alt="Logo UNIASSELVI"></div></div></header>
+<nav class="tabs">
+<button class="tab active" data-view="overview">Visão executiva</button><button class="tab" data-view="poles">Gestão dos polos</button><button class="tab" data-view="leaders">Performance dos coordenadores</button><button class="tab" data-view="actions">Planos de ação</button>
+</nav>
+<section class="filters">
+<div class="field"><label>Operação</label><select id="fOp"><option value="Todas">Todas as operações</option><option>Operação I</option><option>Operação II</option></select></div>
+<div class="field"><label>Coordenador</label><select id="fCoord"><option value="">Todos os coordenadores</option></select></div>
+<div class="field"><label>Polo</label><select id="fPolo"><option value="">Todos os polos</option></select></div>
+<div class="field"><label>Busca rápida</label><input id="fSearch" placeholder="Digite polo ou coordenador"></div>
+<button class="btn secondary" id="clearFilters">Limpar filtros</button>
+<button class="btn dark" id="printReport" type="button">Imprimir relatório</button>
+</section>
+<div id="filterFeedback" class="mini" style="margin:-6px 2px 14px">Exibindo todos os polos.</div>
+<div id="printHeader" class="hidden"></div>
+<div id="overview" class="view">
+<div class="grid kpis" id="kpis"></div>
+<div class="grid two">
+<div class="panel"><h2>Distribuição da estrutura por operação</h2><p class="sub">Quantidade de polos e base de alunos informada nos arquivos.</p><div id="opBars"></div></div>
+<div class="panel"><h2>Faixas de performance</h2><p class="sub">Classificação calculada somente após o preenchimento das cinco dimensões.</p><div id="bands"></div><div class="notice" style="margin-top:12px">As notas ainda não foram preenchidas. O painel não atribui classificação automática sem evidências registradas.</div></div>
+</div>
+<div class="panel"><div class="section-title"><div><h2>Ranking executivo</h2><p class="sub">Polo em primeiro lugar, coordenador em seguida. Polos sem avaliação aparecem como “Pendente”.</p></div></div><div class="tablewrap"><table><thead><tr><th>#</th><th>Operação</th><th>Polo</th><th>Coordenador</th><th>Nota</th><th>Classificação</th><th>Modelo atual / otimizado</th><th>Base</th></tr></thead><tbody id="rankBody"></tbody></table></div></div>
+</div>
+<div id="poles" class="view hidden">
+<div class="section-title"><div><h2>Gestão individual dos polos</h2><div class="mini">Selecione um polo para consultar estrutura, registrar avaliação e acompanhar ações.</div></div></div>
+<div class="panel"><div class="field"><label>Selecionar polo</label><select id="detailPole"></select></div><div id="poleDetail" style="margin-top:16px"></div></div>
+</div>
+<div id="leaders" class="view hidden">
+<div class="panel"><h2>Avaliação de performance dos coordenadores</h2><p class="sub">Cinco dimensões com pesos iguais de 20%. Informe notas de 0 a 100 com base em evidências e registros de acompanhamento.</p><div id="leaderList"></div></div>
+</div>
+<div id="actions" class="view hidden">
+<div class="section-title"><div><h2>Planos de ação por polo</h2><div class="mini">Registre oportunidades, responsáveis, prazos e status. Os dados ficam salvos neste navegador.</div></div><button class="btn" id="newAction">+ Novo plano de ação</button></div>
+<div class="panel"><div id="actionList"></div></div>
+</div>
+<div class="footer">Fonte: arquivos fornecidos — DASH MODELO OPERATIVO, COORDENADORES e BASE ALUNOS OPERAÇÕES 26/2. Indicadores de resultado e gestão dependem de preenchimento/integração de bases específicas. Dados editáveis são armazenados localmente neste navegador.</div>
+</div>
+<script>
+const DATA = {"polos":[{"operacao":"Operação I","codigo":"19752","polo":"Alta Floresta/MT","uf":"MT","safra":"BASE","base":1019,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Larissa Pereira Rocha"],"base_alunos_arquivo_base":1019,"email_coordenador":"larissa.rocha@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250308","polo":"Apucarana/PR","uf":"PR","safra":"2018","base":325,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Aline Aparecida De Melo"],"base_alunos_arquivo_base":325,"email_coordenador":"aline.melo@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100254521","polo":"Balneário Camboriú/SC - A.a Brasil (Sibara)","uf":"SC","safra":"2021/2","base":1105,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Elisângela Oliveira De Lima Pereira"],"base_alunos_arquivo_base":1105,"email_coordenador":"elisangela.lima@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250078","polo":"Brasília/DF - Taguatinga","uf":"DF","safra":"2019","base":548,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Romar Frederico Mesqueu Blum"],"base_alunos_arquivo_base":548,"email_coordenador":"romar.blum@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250558","polo":"Caldas Novas/GO","uf":"GO","safra":"2019/2","base":353,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Michele Marques Otero"],"base_alunos_arquivo_base":353,"email_coordenador":"michele.otero@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250275","polo":"Camboriú/SC","uf":"SC","safra":"2017","base":1388,"tamanho":"G","modelo_vigente":7,"modelo_otimizado":7,"coordenadores":["Weslania Thayanara Alencar Vale"],"base_alunos_arquivo_base":1388,"email_coordenador":"weslania.vale@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250527","polo":"Campo Grande/MS - Terminal Morenão","uf":"MS","safra":"2019","base":582,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Andréia Lúcia Santos de Paula Vieira"],"base_alunos_arquivo_base":582,"email_coordenador":"andreia.vieira@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250956","polo":"Campo Verde/MT","uf":"MT","safra":"2020/1","base":901,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Jéssica Maiara Soares Cordeiro"],"base_alunos_arquivo_base":901,"email_coordenador":"jessica.cordeiro@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250219","polo":"Campos Novos/SC","uf":"SC","safra":"2017","base":492,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Isadora Zandoná Marcon"],"base_alunos_arquivo_base":492,"email_coordenador":"isadora.marcon@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250180","polo":"Caçador/SC","uf":"SC","safra":"2017","base":506,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Jaqueline Aparecida Alexandrino Pereira"],"base_alunos_arquivo_base":506,"email_coordenador":"jaqueline.pereira@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100256002","polo":"Chapecó/SC - Bela Vista","uf":"SC","safra":"2020/2","base":582,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Raphael Smith Castelo Branco Guerreiro"],"base_alunos_arquivo_base":1057,"email_coordenador":"raphael.guerreiro@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250200","polo":"Chapecó/SC - Centro","uf":"SC","safra":"2017","base":1057,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Raphael Smith Castelo Branco Guerreiro"],"base_alunos_arquivo_base":1057,"email_coordenador":"raphael.guerreiro@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"10100","polo":"Colíder/MT","uf":"MT","safra":"BASE","base":585,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Tamiles Silveira Ferreira Da Silva"],"base_alunos_arquivo_base":585,"email_coordenador":"tamiles.silva@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100251204","polo":"Corumbá/MS","uf":"MS","safra":"2019/2","base":935,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Débora De Arruda"],"base_alunos_arquivo_base":935,"email_coordenador":"debora.dearruda@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250014","polo":"Cristalina/GO","uf":"GO","safra":"2020/1","base":510,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Caroline da Cunha Mata"],"base_alunos_arquivo_base":510,"email_coordenador":"caroline.mata@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250598","polo":"Curitiba/PR - Boqueirão","uf":"PR","safra":"2019/2","base":913,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Brayan Allan Belisque"],"base_alunos_arquivo_base":921,"email_coordenador":"brayan.belisque@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250427","polo":"Curitiba/PR - Centro","uf":"PR","safra":"2018","base":1135,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Kassilene da Costa Filismindo"],"base_alunos_arquivo_base":921,"email_coordenador":"kassilene.felismindo@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"19682","polo":"Curitiba/PR - Portão","uf":"PR","safra":"BASE","base":921,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Brayan Allan Belisque"],"base_alunos_arquivo_base":921,"email_coordenador":"brayan.belisque@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250562","polo":"Curitibanos/SC","uf":"SC","safra":"2017","base":855,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Maria Eduarda Weber"],"base_alunos_arquivo_base":855,"email_coordenador":"maria.weber@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100251233","polo":"Cáceres/MT","uf":"MT","safra":"2019/2","base":432,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Danilla Aparecida De Souza Silva"],"base_alunos_arquivo_base":432,"email_coordenador":"danilla.silva@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100251053","polo":"Dourados/MS","uf":"MS","safra":"2017","base":888,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Elizabete da Silva Pacheco Correa"],"base_alunos_arquivo_base":888,"email_coordenador":"elizabete.correa@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250590","polo":"Formosa/GO","uf":"GO","safra":"2019","base":877,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Jessica Rodrigues De Mello"],"base_alunos_arquivo_base":877,"email_coordenador":"jessica.mello@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250217","polo":"Fraiburgo/SC","uf":"SC","safra":"2017","base":597,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Daniel Miguel De Paula Santana"],"base_alunos_arquivo_base":597,"email_coordenador":"daniel.santana@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250173","polo":"Gaspar/SC","uf":"SC","safra":"2017","base":1112,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Kézia Regina Silva E Souza"],"base_alunos_arquivo_base":1112,"email_coordenador":"kezia.souza@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100259023","polo":"Goianésia/GO","uf":"GO","safra":"2023/1","base":293,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Osvaldo Gomes Pinto"],"base_alunos_arquivo_base":293,"email_coordenador":"osvaldo.pinto@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100255024","polo":"Goiânia/GO - Centro","uf":"GO","safra":"2020/1","base":940,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Rafael José Ferreira"],"base_alunos_arquivo_base":940,"email_coordenador":"rafael.jferreira@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250175","polo":"Itajai","uf":"","safra":"2017","base":3620,"tamanho":"XGG","modelo_vigente":10,"modelo_otimizado":10,"coordenadores":["Paulo Ricardo Soares Araujo"],"email_coordenador":"paulo.araujo@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250284","polo":"Jaraguá do Sul/SC","uf":"SC","safra":"2017","base":1930,"tamanho":"G","modelo_vigente":7,"modelo_otimizado":7,"coordenadores":["Nazila Caroline Bortolini"],"base_alunos_arquivo_base":1930,"email_coordenador":"nazila.bortolini@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250026","polo":"Lages/SC - Centro","uf":"SC","safra":"2020/1","base":887,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Lucas Paulino Bezerra de Mendes"],"base_alunos_arquivo_base":1188,"email_coordenador":"lucas.menezes@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"10360","polo":"Lages/SC - Garden Shopping","uf":"SC","safra":"BASE","base":1188,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Lucas Paulino Bezerra de Mendes"],"base_alunos_arquivo_base":1188,"email_coordenador":"lucas.menezes@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250677","polo":"Lucas do Rio Verde/MT","uf":"MT","safra":"2019","base":778,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Pâmela Roberta Dias Costa"],"base_alunos_arquivo_base":778,"email_coordenador":"pamela.dias@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250591","polo":"Luziânia/GO","uf":"GO","safra":"2018","base":426,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Bianca Rodrigues Marinho"],"base_alunos_arquivo_base":426,"email_coordenador":"bianca.marinho@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"7506737","polo":"Maringá/PR - Zona 01","uf":"PR","safra":"2024/2","base":279,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Francielly Specian Alves De Oliveira"],"base_alunos_arquivo_base":279,"email_coordenador":"francielly.oliveira@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250181","polo":"Mirassol D'Oeste/MT","uf":"MT","safra":"2020/1","base":297,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Thais Dos Santos Rodrigues Moretti"],"base_alunos_arquivo_base":297,"email_coordenador":"thais.moretti@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250179","polo":"Navegantes/SC","uf":"SC","safra":"2017","base":1454,"tamanho":"G","modelo_vigente":7,"modelo_otimizado":7,"coordenadores":["Felipe D. Silva Nogueira"],"base_alunos_arquivo_base":1454,"email_coordenador":"felipe.nogueira@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250529","polo":"Naviraí/MS","uf":"MS","safra":"2020/1","base":541,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Patrícia Lana Oliveira Rigonato"],"base_alunos_arquivo_base":541,"email_coordenador":"patricia.rigonato@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100251055","polo":"Novo Gama/GO- Pedregal","uf":"GO","safra":"2019","base":301,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Danilo Silva da Costa"],"base_alunos_arquivo_base":301,"email_coordenador":"danilo.costa@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100256729","polo":"Palmas/TO - Plano Diretor Sul","uf":"TO","safra":"2021/2","base":958,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Isaias Fernandes Da Silva"],"base_alunos_arquivo_base":958,"email_coordenador":"isaias.silva@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250081","polo":"Planaltina/GO","uf":"GO","safra":"2019","base":722,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Jullyana Vieira De Sousa"],"base_alunos_arquivo_base":722,"email_coordenador":"jullyana.sousa@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250560","polo":"Pomerode/SC","uf":"SC","safra":"2018","base":881,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Maricesi Valcarenghi"],"base_alunos_arquivo_base":881,"email_coordenador":"maricesi.valcarenghi@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250509","polo":"Ponta Grossa/PR - Centro","uf":"PR","safra":"2020/1","base":546,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Nilton Carlos Ferreira"],"base_alunos_arquivo_base":546,"email_coordenador":"nilton.ferreira@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250032","polo":"Pontes e Lacerda/MT","uf":"MT","safra":"2020/1","base":932,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Marcelly Ventura De Oliveira"],"base_alunos_arquivo_base":932,"email_coordenador":"marcelly.oliveira@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"19250","polo":"Porangatu/GO","uf":"GO","safra":"BASE","base":367,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Ingrid Luanny Mendonça Ribeiro"],"base_alunos_arquivo_base":367,"email_coordenador":"ingrid.ribeiro@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250957","polo":"Primavera do Leste/MT","uf":"MT","safra":"2019/2","base":770,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Ana Gabriela Andrade Silverio"],"base_alunos_arquivo_base":770,"email_coordenador":"ana.silverio@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250112","polo":"Sarandi/PR","uf":"PR","safra":"2017","base":369,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Carla Fernanda Rosa"],"base_alunos_arquivo_base":369,"email_coordenador":"carla.rosa@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250126","polo":"Sinop/MT","uf":"MT","safra":"2017","base":1082,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Andressa Alves Botin"],"base_alunos_arquivo_base":1082,"email_coordenador":"andressa.botin@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100251092","polo":"Tangará da Serra/MT","uf":"MT","safra":"2019/2","base":602,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":6,"coordenadores":["Erick Sammys Paz De Melo"],"base_alunos_arquivo_base":602,"email_coordenador":"erick.melo@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250561","polo":"Timbó/SC","uf":"SC","safra":"2018","base":1780,"tamanho":"G","modelo_vigente":7,"modelo_otimizado":7,"coordenadores":["Luana Caroline Nascimento Almeida"],"base_alunos_arquivo_base":1780,"email_coordenador":"luana.almeida@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250909","polo":"Três Lagoas/MS","uf":"MS","safra":"2019/2","base":747,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":6,"coordenadores":["Ingrid Vilela Santana"],"base_alunos_arquivo_base":747,"email_coordenador":"ingrid.vilela@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100251063","polo":"Valparaíso de Goiás/GO - BR 040","uf":"GO","safra":"2019","base":430,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Fabiane da Silva Rodrigues"],"base_alunos_arquivo_base":430,"email_coordenador":"fabiane.rodrigues@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250218","polo":"Videira/SC","uf":"SC","safra":"2017","base":846,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Dienifer Correia Batista"],"base_alunos_arquivo_base":846,"email_coordenador":"dienifer.batista@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250235","polo":"Várzea Grande/MT","uf":"MT","safra":"2017","base":1762,"tamanho":"G","modelo_vigente":7,"modelo_otimizado":7,"coordenadores":["Karla Pereira Baia"],"base_alunos_arquivo_base":1762,"email_coordenador":"karla.baia@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"100250130","polo":"Xanxerê/SC","uf":"SC","safra":"2017","base":527,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Franciele Ramos"],"base_alunos_arquivo_base":527,"email_coordenador":"franciele.ramos@uniasselvi.com.br"},{"operacao":"Operação I","codigo":"10014","polo":"Xaxim/SC","uf":"SC","safra":"BASE","base":277,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Leiliane Silva"],"base_alunos_arquivo_base":277,"email_coordenador":"leiliane.silva@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100256057","polo":"Apodi/RN","uf":"RN","safra":"2021/1","base":853,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Zayraiza Catarina Marinho Da Costa"],"base_alunos_arquivo_base":853,"email_coordenador":"zayraiza.costa@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100250655","polo":"Aracati/CE","uf":"CE","safra":"2018","base":786,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Tamires Da Silva Fernandes"],"base_alunos_arquivo_base":786,"email_coordenador":"tamires.fernandes@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100250834","polo":"Araraquara/SP - Centro","uf":"SP","safra":"2024/1","base":279,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Débora Aparecida da Silva Fiorini"],"base_alunos_arquivo_base":279,"email_coordenador":"debora.fiorini@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100250705","polo":"Araçatuba/SP","uf":"SP","safra":"2022/1","base":180,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Caroline Ielpo Feijó"],"base_alunos_arquivo_base":180,"email_coordenador":"caroline.feijo@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100256060","polo":"Assú/RN","uf":"RN","safra":"2021/1","base":570,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Angela Maria Dos Santos"],"base_alunos_arquivo_base":570,"email_coordenador":"angela.santos@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100250759","polo":"Barretos/SP","uf":"SP","safra":"2023/1","base":170,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Daiane Marques"],"base_alunos_arquivo_base":170,"email_coordenador":"daiane.marques@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100250481","polo":"Baturité/CE","uf":"CE","safra":"2018","base":855,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Elias Soares Paiva"],"base_alunos_arquivo_base":855,"email_coordenador":"elias.paiva@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100250567","polo":"Belo Horizonte/MG - Shopping Estação BH","uf":"MG","safra":"2018","base":1344,"tamanho":"G","modelo_vigente":7,"modelo_otimizado":7,"coordenadores":["Thaise Luana Alves de Souza"],"base_alunos_arquivo_base":1344,"email_coordenador":"thaise.souza@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100250874","polo":"Boa Viagem/CE","uf":"CE","safra":"2019/2","base":1119,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Décio Maia Sobrinho"],"base_alunos_arquivo_base":1119,"email_coordenador":"decio.sobrinho@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100250488","polo":"Bonito/PE","uf":"PE","safra":"2018","base":531,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Wallanberg Rafael Almeida Feitosa"],"base_alunos_arquivo_base":531,"email_coordenador":"wallanberg.feitosa@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100254112","polo":"Brejo Santo/CE","uf":"CE","safra":"2020/2","base":593,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Cinthya De Jesus Silva Oliveira"],"base_alunos_arquivo_base":593,"email_coordenador":"cinthya.oliveira@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100251037","polo":"Canindé/CE","uf":"CE","safra":"2019/2","base":889,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Thifany Roberta Pinto Silva"],"base_alunos_arquivo_base":889,"email_coordenador":"thifany.silva@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100250110","polo":"Cariacica/ES - Shopping Moxuara","uf":"ES","safra":"2020/1","base":837,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Bruna Goncalves Martins"],"base_alunos_arquivo_base":837,"email_coordenador":"bruna.martins@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100250205","polo":"Domingos Martins/ES","uf":"ES","safra":"2019","base":262,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Mateus Lucas Cosmo"],"base_alunos_arquivo_base":262,"email_coordenador":"mateus.cosmo@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100250058","polo":"Guarujá/SP","uf":"SP","safra":"2020/1","base":1564,"tamanho":"G","modelo_vigente":7,"modelo_otimizado":7,"coordenadores":["Lidiane Martins Nicolosi"],"base_alunos_arquivo_base":1564,"email_coordenador":"lidiane.nicolosi@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100250018","polo":"Ibirité/MG","uf":"MG","safra":"2020/1","base":306,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Glaucia Silva Mendes"],"base_alunos_arquivo_base":306,"email_coordenador":"glaucia.mendes@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100250658","polo":"Ipu/CE","uf":"CE","safra":"2018","base":551,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Antonia De Maria Vieira"],"base_alunos_arquivo_base":551,"email_coordenador":"antonia.vieira@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100250656","polo":"Itapajé/CE","uf":"CE","safra":"2018","base":1606,"tamanho":"G","modelo_vigente":7,"modelo_otimizado":7,"coordenadores":["Jose Augusto Pereira de Andrade"],"base_alunos_arquivo_base":1606,"email_coordenador":"jose.andrade@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100254152","polo":"Jaguaribe/CE","uf":"CE","safra":"2021/1","base":499,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Samuel Leite Teixeira"],"base_alunos_arquivo_base":499,"email_coordenador":"samuel.teixeira@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100250813","polo":"Jaú/SP","uf":"SP","safra":"2022/2","base":561,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Edgar Busaranho Zanin"],"base_alunos_arquivo_base":561,"email_coordenador":"edgar.zanin@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100251089","polo":"João Monlevade/MG","uf":"MG","safra":"2020/1","base":643,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Jessica Andrade de Paula"],"base_alunos_arquivo_base":643,"email_coordenador":"jessica.paula@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100251038","polo":"Limoeiro do Norte/CE","uf":"CE","safra":"2019/2","base":1160,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Jardenia Kelly Ferreira"],"base_alunos_arquivo_base":1160,"email_coordenador":"jardenia.ferreira@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100250742","polo":"Marília/SP","uf":"SP","safra":"2023/2","base":228,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Denyse Pereira Da Silva"],"base_alunos_arquivo_base":228,"email_coordenador":"denyse.pereira@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100250875","polo":"Mombaça/CE","uf":"CE","safra":"2019/2","base":624,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Ivina Maressa Evangelista Ivo"],"base_alunos_arquivo_base":624,"email_coordenador":"ivina.evangelista@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100251042","polo":"Morada Nova/CE","uf":"CE","safra":"2019/2","base":447,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Daijane Cristine Almeida Silva"],"base_alunos_arquivo_base":447,"email_coordenador":"daijane.silva@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100251006","polo":"Mossoró/RN","uf":"RN","safra":"2019/2","base":446,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Cleide Regina Ferreira e Silva"],"base_alunos_arquivo_base":446,"email_coordenador":"cleide.ferreira@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100250030","polo":"Ourinhos/SP","uf":"SP","safra":"2020/1","base":218,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Helem Márcia Bressanin Tomiama"],"base_alunos_arquivo_base":218,"email_coordenador":"helem.tomiama@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100251058","polo":"Pedro Leopoldo/MG","uf":"MG","safra":"2019","base":660,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":6,"coordenadores":["Lilian Marina Perdigão Alves"],"base_alunos_arquivo_base":660,"email_coordenador":"lilian.alves@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100250044","polo":"Petrópolis/RJ","uf":"RJ","safra":"2020/1","base":575,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Rafaela Rodrigues Da Silva"],"base_alunos_arquivo_base":575,"email_coordenador":"rafaela.rodrigues@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100254177","polo":"Pindamonhangaba/SP","uf":"SP","safra":"2022/1","base":245,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Andre Ricardo Moreira"],"base_alunos_arquivo_base":245,"email_coordenador":"andre.moreira@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100250778","polo":"Presidente Dutra/MA","uf":"MA","safra":"2019","base":683,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Joicyellen de Sousa Silva"],"base_alunos_arquivo_base":683,"email_coordenador":"joicyellen.silva@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100251044","polo":"Quixeramobim/CE","uf":"CE","safra":"2019/2","base":657,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":6,"coordenadores":["Antonio Jamison Gomes Da Silva"],"base_alunos_arquivo_base":657,"email_coordenador":"antonio.gomes@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100251106","polo":"Rio Claro/SP","uf":"SP","safra":"2022/2","base":431,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Cibelle Agabiti Villa Tucunduva"],"base_alunos_arquivo_base":431,"email_coordenador":"cibelle.tucunduva@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100251317","polo":"Rio de Janeiro/RJ - Barra da Tijuca","uf":"RJ","safra":"2021/1","base":884,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["João Ricardo Brasil"],"base_alunos_arquivo_base":605,"email_coordenador":"joao.brasil@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100250038","polo":"Rio de Janeiro/RJ - Botafogo","uf":"RJ","safra":"2020/1","base":404,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Juliana Dias da Conceição"],"base_alunos_arquivo_base":605,"email_coordenador":"juliana.conceicao@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100250049","polo":"Rio de Janeiro/RJ - Ilha do Governador","uf":"RJ","safra":"2020/1","base":893,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Rosangela Marques Pereira"],"base_alunos_arquivo_base":605,"email_coordenador":"rosangela.pereira@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100250034","polo":"Rio de Janeiro/RJ - Tijuca","uf":"RJ","safra":"2020/1","base":605,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":6,"coordenadores":["Marcelo Machado dos Santos Gomes"],"base_alunos_arquivo_base":605,"email_coordenador":"marcelo.machado@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100251231","polo":"Santa Luzia/MG - São Benedito","uf":"MG","safra":"2019/2","base":611,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Luana Da Cruz Silva"],"base_alunos_arquivo_base":611,"email_coordenador":"luana.cruz@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100251105","polo":"Sertãozinho/SP","uf":"SP","safra":"2024/1","base":138,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Valéria Francisca de Sousa"],"base_alunos_arquivo_base":138,"email_coordenador":"valeria.sousa@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100250472","polo":"São Gonçalo do Amarante/CE","uf":"CE","safra":"2018","base":1017,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Patricia Cavalcante Lima"],"base_alunos_arquivo_base":1017,"email_coordenador":"patricia.lima@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100250549","polo":"São Gonçalo/RJ - Partage Shopping","uf":"RJ","safra":"2020/1","base":1435,"tamanho":"G","modelo_vigente":7,"modelo_otimizado":7,"coordenadores":["Daniela Ribeiro Da Conceição"],"base_alunos_arquivo_base":1435,"email_coordenador":"daniela.conceicao@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100251213","polo":"São José dos Campos/SP","uf":"SP","safra":"2019/2","base":609,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Rafaela Ariane Tobal Silva"],"base_alunos_arquivo_base":609,"email_coordenador":"rafaela.silva@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100258024","polo":"São Paulo/SP - Santo Amaro","uf":"SP","safra":"2022/2","base":450,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Tatielle Gois de Almeida"],"base_alunos_arquivo_base":655,"email_coordenador":"tatielle.almeida@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100251155","polo":"São Paulo/SP - Tatuapé","uf":"SP","safra":"2019/2","base":655,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":6,"coordenadores":["Sabrina Carvalho De Souza"],"base_alunos_arquivo_base":655,"email_coordenador":"sabrina.carvalho@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100255523","polo":"Taubaté/SP","uf":"SP","safra":"2023/2","base":328,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Fabiana Cleuma Calderoni"],"base_alunos_arquivo_base":328,"email_coordenador":"fabiana.calderoni@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100250630","polo":"Tianguá/CE","uf":"CE","safra":"2019","base":485,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Marina Bezerra da Silva"],"base_alunos_arquivo_base":485,"email_coordenador":"marina.silva@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100250785","polo":"Uberaba/MG","uf":"MG","safra":"2018","base":474,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Elaine de Bessa Pereira"],"base_alunos_arquivo_base":474,"email_coordenador":"elaine.bessa@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100251064","polo":"Vespasiano/MG","uf":"MG","safra":"2019","base":485,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Patrícia Auxiliadora Martins Ferreira Braga"],"base_alunos_arquivo_base":485,"email_coordenador":"patricia.braga@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100250113","polo":"Vila Velha/ES","uf":"ES","safra":"2019/2","base":758,"tamanho":"M","modelo_vigente":6,"modelo_otimizado":6,"coordenadores":["Sandra Mara Barbosa"],"base_alunos_arquivo_base":758,"email_coordenador":"sandra.barbosa@uniasselvi.com.br"},{"operacao":"Operação II","codigo":"100251229","polo":"Vitória/ES - Centro Trade Center","uf":"ES","safra":"2019/2","base":468,"tamanho":"P","modelo_vigente":5,"modelo_otimizado":5,"coordenadores":["Juanne Karen Oliveira Santos"],"base_alunos_arquivo_base":468,"email_coordenador":"juanne.santos@uniasselvi.com.br"}],"totals":{"Operação I":{"polos":54,"base_modelo":45150,"base_alunos":42100},"Operação II":{"polos":50,"base_modelo":32071,"base_alunos":31910}}};
+const dims=[
+{title:"Gestão Comercial e Resultados",items:[
+"Indicador de captação de novos alunos.",
+"Atingimento da meta de rematrícula.",
+"Crescimento da base de alunos (YOY).",
+"Recuperação de alunos não renovados (Winback)."
+]},
+{title:"Gestão da Experiência e Engajamento",items:[
+"Índice de engajamento dos alunos no AVA.",
+"NPS do polo.",
+"Índice de inadimplência / regularização financeira.",
+"Acompanhamento de alunos em risco de evasão."
+]},
+{title:"Gestão Operacional",items:[
+"Cumprimento dos prazos de lançamentos de contas a pagar.",
+"Organização e conservação de infraestrutura.",
+"Conformidade com os procedimentos institucionais."
+]},
+{title:"Liderança e Desenvolvimento de Equipe",items:[
+"Participação da equipe nas capacitações (Vitru Academy).",
+"Produtividade e entrega das atividades.",
+"Gestão de Turnover e cumprimento de jornada.",
+"Realização de feedbacks e acompanhamentos."
+]},
+{title:"Gestão Estratégica e Proatividade",items:[
+"Participação e qualidade das reuniões GRO.",
+"Cumprimento dos planos de ação.",
+"Análise crítica dos indicadores do polo.",
+"Antecipação de riscos e resolução de problemas.",
+"Proatividade na busca por melhorias e resultados."
+]}
+];
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const key=p=>p.operacao+"|"+p.polo;
+let state=JSON.parse(localStorage.getItem("uniasselvi_modelo_operativo_v1")||'{"scores":{},"notes":{},"actions":[]}');
+Object.keys(state.scores||{}).forEach(k=>{
+ let old=state.scores[k];
+ if(Array.isArray(old)) state.scores[k]={legacy:old,details:dims.map(()=>[])};
+ else if(!old.details) old.details=dims.map(()=>[]);
+});
+let currentView="overview";
+function save(){localStorage.setItem("uniasselvi_modelo_operativo_v1",JSON.stringify(state));renderAll()}
+function dimensionScores(p){
+ let record=state.scores[key(p)]||{details:dims.map(()=>[])};
+ return dims.map((d,i)=>{
+  let vals=(record.details?.[i]||[]);
+  if(vals.length!==d.items.length||vals.some(x=>x===null||x===""||!Number.isFinite(Number(x))))return null;
+  return vals.reduce((sum,x)=>sum+Number(x),0)/d.items.length;
+ });
+}
+function score(p){
+ let a=dimensionScores(p);
+ if(a.some(x=>x===null))return null;
+ return a.reduce((sum,x)=>sum+x,0)/5;
+}
+function band(n){if(n===null)return ["Pendente",""];if(n>=90)return ["Alta performance","green"];if(n>=75)return ["Boa performance","green"];if(n>=60)return ["Atenção","yellow"];return ["Baixa performance","red"]}
+function filteredBy(op,co,po,q){
+ return DATA.polos.filter(p=>
+  (op==="Todas"||p.operacao===op) &&
+  (!co||p.coordenadores.includes(co)) &&
+  (!po||p.polo===po) &&
+  (!q||(p.polo+" "+p.coordenadores.join(" ")+" "+p.codigo).toLowerCase().includes(q))
+ );
+}
+function selected(){
+ return filteredBy($("fOp").value,$("fCoord").value,$("fPolo").value,$("fSearch").value.trim().toLowerCase());
+}
+function setOptions(el, values, firstLabel, selectedValue){
+ el.innerHTML=`<option value="">${firstLabel}</option>`+values.map(v=>`<option value="${esc(v)}">${esc(v)}</option>`).join("");
+ el.value=values.includes(selectedValue)?selectedValue:"";
+}
+function populateFilters(){
+ let currentCoord=$("fCoord").value, currentPolo=$("fPolo").value;
+ let op=$("fOp").value;
+ let q=$("fSearch").value.trim().toLowerCase();
+ let coordRows=filteredBy(op,"",currentPolo,q);
+ let coords=[...new Set(coordRows.flatMap(p=>p.coordenadores))].sort();
+ setOptions($("fCoord"),coords,"Todos os coordenadores",currentCoord);
+
+ let poloRows=filteredBy(op,$("fCoord").value,"",q);
+ let polos=[...new Set(poloRows.map(p=>p.polo))].sort();
+ setOptions($("fPolo"),polos,"Todos os polos",currentPolo);
+
+ // The individual polo selector follows the operation filter, but remains independent
+ // from the quick-search text so a detail record can always be opened.
+ let detailRows=DATA.polos.filter(p=>op==="Todas"||p.operacao===op);
+ $("detailPole").innerHTML=detailRows.map(p=>`<option value="${esc(key(p))}">${esc(p.operacao)} · ${esc(p.polo)}</option>`).join("");
+ if(!$("detailPole").value && detailRows.length) $("detailPole").value=key(detailRows[0]);
+}
+function refreshFilters(changed){
+ // Rebuild dependent choices while preserving any still-valid selection.
+ populateFilters();
+ renderAll();
+ let rows=selected();
+ let label=rows.length===1?"polo": "polos";
+ $("filterFeedback").textContent=`Exibindo ${rows.length} ${label} · ${new Set(rows.flatMap(p=>p.coordenadores)).size} coordenador(es) no recorte.`;
+ if(changed==="fPolo" && $("fPolo").value){
+  let p=DATA.polos.find(x=>x.polo===$("fPolo").value && ($("fOp").value==="Todas"||x.operacao===$("fOp").value));
+  if(p){$("detailPole").value=key(p); if(currentView==="poles")renderPole();}
+ }
+}
+function printFilteredReport(){
+ const rows=selected();
+ const op=$("fOp").value;
+ const coord=$("fCoord").value||"Todos";
+ const polo=$("fPolo").value||"Todos";
+ const search=$("fSearch").value.trim()||"—";
+ const active=document.querySelector(".view:not(.hidden)");
+ const activeName=active?({overview:"Visão executiva",poles:"Gestão dos polos",leaders:"Performance dos coordenadores",actions:"Planos de ação"}[active.id]||"Relatório"):"Relatório";
+ $("printHeader").classList.remove("hidden");
+ $("printHeader").innerHTML=`<div style="padding:10px 0 16px;border-bottom:2px solid #E5A900;margin-bottom:16px"><div style="font-size:12px;font-weight:800;letter-spacing:1px">UNIASSELVI · OPERAÇÕES PRÓPRIAS</div><h1 style="margin:5px 0;font-size:22px">Relatório — ${activeName}</h1><div style="font-size:12px">Operação: ${esc(op)} · Coordenador: ${esc(coord)} · Polo: ${esc(polo)} · Busca: ${esc(search)}</div><div style="font-size:11px;margin-top:5px">${rows.length} polo(s) no recorte · Gerado em ${new Date().toLocaleString("pt-BR")}</div></div>`;
+ window.print();
+ setTimeout(()=>{$("printHeader").classList.add("hidden");$("printHeader").innerHTML="";},500);
+}
+function renderOverview(){
+let rows=selected(),base=rows.reduce((s,p)=>s+(p.base_alunos_arquivo_base??p.base),0),graded=rows.map(p=>score(p)).filter(x=>x!==null),avg=graded.length?graded.reduce((a,b)=>a+b,0)/graded.length:null;
+$("kpis").innerHTML=[
+["Polos no recorte",rows.length,"Unidades cadastradas"],
+["Base de alunos",base.toLocaleString("pt-BR"),"Soma da base informada"],
+["Coordenadores identificados",new Set(rows.flatMap(p=>p.coordenadores)).size,"Nomes distintos na estrutura oficial"],
+["Avaliações concluídas",`${graded.length}/${rows.length}`,avg===null?"Notas ainda não preenchidas":`Média das avaliações: ${avg.toFixed(1).replace(".",",")}`]
+].map(x=>`<div class="kpi"><div class="label">${x[0]}</div><div class="value">${x[1]}</div><div class="hint">${x[2]}</div></div>`).join("");
+let ops=["Operação I","Operação II"].filter(o=>$("fOp").value==="Todas"||$("fOp").value===o);
+$("opBars").innerHTML=ops.map(o=>{let a=rows.filter(p=>p.operacao===o),b=a.reduce((s,p)=>s+(p.base_alunos_arquivo_base??p.base),0);let max=Math.max(1,...ops.map(x=>rows.filter(p=>p.operacao===x).reduce((s,p)=>s+(p.base_alunos_arquivo_base??p.base),0)));return `<div class="barrow"><b>${o}</b><div class="bar"><i style="width:${b/max*100}%"></i></div><span>${b.toLocaleString("pt-BR")}</span></div><div class="mini" style="margin:-5px 0 10px 155px">${a.length} polos</div>`}).join("");
+let counts={"Alta performance":0,"Boa performance":0,"Atenção":0,"Baixa performance":0,"Pendente":0};rows.forEach(p=>counts[band(score(p))[0]]++);
+$("bands").innerHTML=Object.entries(counts).map(([n,v])=>`<div class="barrow"><b>${n}</b><div class="bar"><i style="width:${rows.length?v/rows.length*100:0}%;background:${n==="Alta performance"||n==="Boa performance"?"#16865b":n==="Atenção"?"#d6a12d":n==="Baixa performance"?"#c44545":"#aab6c4"}"></i></div><span>${v}</span></div>`).join("");
+let sorted=[...rows].sort((a,b)=>(score(b)??-1)-(score(a)??-1)||a.polo.localeCompare(b.polo));
+$("rankBody").innerHTML=sorted.map((p,i)=>{let n=score(p),bd=band(n);return `<tr><td class="rank">${i+1}</td><td>${esc(p.operacao)}</td><td><b>${esc(p.polo)}</b></td><td>${p.coordenadores.map(esc).join(", ")||'<span class="muted">Não identificado</span>'}</td><td>${n===null?"—":n.toFixed(1).replace(".",",")}</td><td><span class="pill ${bd[1]}">${bd[0]}</span></td><td>${p.modelo_vigente} / ${p.modelo_otimizado}</td><td>${(p.base_alunos_arquivo_base??p.base).toLocaleString("pt-BR")}</td></tr>`}).join("")||'<tr><td colspan="8">Nenhum polo no filtro.</td></tr>';
+}
+function renderPole(){
+let p=DATA.polos.find(x=>key(x)===$("detailPole").value)||selected()[0]||DATA.polos[0];if(!p){$("poleDetail").innerHTML="Nenhum polo encontrado.";return}
+let n=score(p),bd=band(n),notes=state.notes[key(p)]||{};
+let record=state.scores[key(p)]||{details:dims.map(()=>[])};
+$("poleDetail").innerHTML=`<div class="detail-head"><div><div class="detail-title">${esc(p.polo)}</div><div class="mini">${esc(p.operacao)} · Código ${esc(p.codigo)} · Safra ${esc(p.safra||"—")}</div><p><span class="pill ${bd[1]}">${bd[0]}</span></p></div><div class="scorebox"><strong id="overallScore">${n===null?"—":n.toFixed(1).replace(".",",")}</strong><div class="mini">Nota / 100</div></div></div>
+<div class="grid kpis" style="grid-template-columns:repeat(4,minmax(0,1fr));margin-top:12px"><div class="kpi"><div class="label">Base de alunos</div><div class="value">${(p.base_alunos_arquivo_base??p.base).toLocaleString("pt-BR")}</div></div><div class="kpi"><div class="label">Tamanho</div><div class="value">${esc(p.tamanho)}</div></div><div class="kpi"><div class="label">Modelo vigente</div><div class="value">${p.modelo_vigente}</div></div><div class="kpi"><div class="label">Modelo otimizado</div><div class="value">${p.modelo_otimizado}</div></div></div>
+<div class="panel" style="box-shadow:none;margin-top:14px"><h2>Responsabilidade</h2><p>${p.coordenadores.map(esc).join(", ")||"Coordenador não identificado na base enviada."}</p></div>
+<div class="panel" style="box-shadow:none"><h2>Avaliação detalhada dos indicadores</h2><p class="sub">Atribua uma nota de 0 a 100 para cada indicador. A média dos indicadores compõe a nota da dimensão; cada dimensão vale 20% da avaliação final. Todos os indicadores precisam ser avaliados para concluir a nota.</p>
+<div class="dimensions">${dims.map((d,i)=>{
+ let vals=record.details?.[i]||[];
+ let complete=vals.length===d.items.length&&vals.every(x=>x!==null&&x!==""&&Number.isFinite(Number(x)));
+ let avg=complete?vals.reduce((a,b)=>a+Number(b),0)/d.items.length:null;
+ let legacy=record.legacy?.[i];
+ return `<div class="dim"><div class="dim-head"><span>${d.title}</span><span>20%</span></div>
+ <div class="sub-indicators">${d.items.map((item,j)=>`<div class="sub-indicator"><label>${esc(item)}</label><input type="number" min="0" max="100" step="1" placeholder="0–100" value="${esc(vals[j]??"")}" data-dim="${i}" data-item="${j}" aria-label="Nota para ${esc(item)}"></div>`).join("")}</div>
+ <div class="dimension-result"><span>Média da dimensão</span><strong data-dim-average="${i}">${avg===null?"Pendente":avg.toFixed(1).replace(".",",")}</strong></div>
+ ${legacy!==undefined?`<small class="legacy-note">Nota geral anterior registrada: ${esc(legacy)}. Reavalie os indicadores individualmente para atualizar a nota.</small>`:""}
+ </div>`;
+}).join("")}</div></div>
+<div class="panel" style="box-shadow:none"><h2>Registros de gestão</h2><div class="formgrid"><div class="field"><label>Principais evidências / entregas</label><textarea id="evidence" placeholder="Registre resultados, rotinas e evidências...">${esc(notes.evidence||"")}</textarea></div><div class="field"><label>Desvios e oportunidades</label><textarea id="deviations" placeholder="Quais pontos precisam de atenção?">${esc(notes.deviations||"")}</textarea></div><div class="field"><label>Comentários do acompanhamento</label><textarea id="comments" placeholder="Histórico de reuniões, feedbacks e tratativas...">${esc(notes.comments||"")}</textarea></div><div class="field"><label>Próxima revisão</label><input id="review" type="date" value="${esc(notes.review||"")}"></div></div><div style="margin-top:12px"><button class="btn" id="savePole">Salvar avaliação e registros</button></div></div>`;
+$("poleDetail").querySelectorAll("[data-dim][data-item]").forEach(inp=>inp.addEventListener("change",()=>{
+ let rec=state.scores[key(p)]||{details:dims.map(()=>[])};
+ let di=Number(inp.dataset.dim),ii=Number(inp.dataset.item);
+ if(!rec.details)rec.details=dims.map(()=>[]);
+ rec.details[di][ii]=inp.value===""?null:Math.max(0,Math.min(100,Number(inp.value)));
+ state.scores[key(p)]=rec;
+ localStorage.setItem("uniasselvi_modelo_operativo_v1",JSON.stringify(state));
+ renderPole();
+}));
+$("savePole").onclick=()=>{state.notes[key(p)]={evidence:$("evidence").value,deviations:$("deviations").value,comments:$("comments").value,review:$("review").value};save();alert("Avaliação e registros salvos neste navegador.")};
+}
+function renderLeaders(){
+let rows=selected().filter(p=>p.coordenadores.length);let seen=new Set(),list=[];
+rows.forEach(p=>p.coordenadores.forEach(c=>{if(!seen.has(c)){seen.add(c);list.push({c,p})}}));
+$("leaderList").innerHTML=list.map(({c,p})=>{let n=score(p),bd=band(n);return `<div class="action-card"><div class="action-top"><div><b>${esc(p.polo)}</b><div class="mini">${esc(c)} · ${esc(p.operacao)}</div></div><span class="pill ${bd[1]}">${n===null?"Pendente":n.toFixed(1).replace(".",",")+" / 100"} · ${bd[0]}</span></div><div class="mini" style="margin-top:9px">A avaliação detalhada é registrada na ficha do polo. Clique em “Abrir ficha” para preencher as cinco dimensões e evidências.</div><button class="btn secondary" style="margin-top:10px" data-open="${esc(key(p))}">Abrir ficha do polo</button></div>`}).join("")||'<div class="empty">Nenhum coordenador identificado para os filtros selecionados.</div>';
+$("leaderList").querySelectorAll("[data-open]").forEach(b=>b.onclick=()=>{showView("poles");$("detailPole").value=b.dataset.open;renderPole()});
+}
+function renderActions(){
+let list=state.actions||[];
+$("actionList").innerHTML=list.length?list.map((a,i)=>`<div class="action-card"><div class="action-top"><b>${esc(a.polo||"Polo não definido")}</b><span class="pill ${a.status==="Concluído"?"green":a.status==="Em andamento"?"yellow":"red"}">${esc(a.status||"Não iniciado")}</span></div><div class="mini">${esc(a.operacao||"")} · Responsável: ${esc(a.owner||"Não informado")} · Prazo: ${esc(a.due||"Não definido")}</div><div style="margin-top:8px"><b>${esc(a.title||"Plano de ação")}</b><p class="mini">${esc(a.description||"")}</p></div><button class="btn secondary" data-edit="${i}">Editar</button> <button class="btn secondary" data-del="${i}">Excluir</button></div>`).join(""):'<div class="empty">Nenhum plano de ação registrado. Utilize “Novo plano de ação” para começar.</div>';
+$("actionList").querySelectorAll("[data-del]").forEach(b=>b.onclick=()=>{if(confirm("Excluir este plano de ação?")){state.actions.splice(+b.dataset.del,1);save()}});
+$("actionList").querySelectorAll("[data-edit]").forEach(b=>b.onclick=()=>editAction(+b.dataset.edit));
+}
+function editAction(i=-1){
+let a=i>=0?state.actions[i]:{operacao:$("fOp").value==="Todas"?"Operação I":$("fOp").value,polo:"",title:"",description:"",owner:"",due:"",status:"Não iniciado"};
+let wrap=document.createElement("div");wrap.className="panel";wrap.innerHTML=`<h2>${i>=0?"Editar":"Novo"} plano de ação</h2><div class="formgrid"><div class="field"><label>Operação</label><select id="aop"><option>Operação I</option><option>Operação II</option></select></div><div class="field"><label>Polo</label><select id="apolo">${DATA.polos.map(p=>`<option value="${esc(p.polo)}" data-op="${esc(p.operacao)}">${esc(p.operacao)} · ${esc(p.polo)}</option>`).join("")}</select></div><div class="field"><label>Ação / oportunidade</label><input id="atitle"></div><div class="field"><label>Responsável</label><input id="aowner"></div><div class="field"><label>Prazo</label><input type="date" id="adue"></div><div class="field"><label>Status</label><select id="astatus"><option>Não iniciado</option><option>Em andamento</option><option>Concluído</option><option>Atrasado</option></select></div><div class="field" style="grid-column:1/-1"><label>Descrição / próximos passos</label><textarea id="adesc"></textarea></div></div><div style="margin-top:12px"><button class="btn" id="asave">Salvar plano</button> <button class="btn secondary" id="acancel">Cancelar</button></div>`;
+$("actionList").prepend(wrap);$("aop").value=a.operacao;$("apolo").value=a.polo;$("atitle").value=a.title;$("aowner").value=a.owner;$("adue").value=a.due;$("astatus").value=a.status;$("adesc").value=a.description;
+$("aop").onchange=()=>{let first=[...$("apolo").options].find(o=>o.dataset.op===$("aop").value);if(first)$("apolo").value=first.value;[...$("apolo").options].forEach(o=>o.hidden=o.dataset.op!==$("aop").value)};
+$("aop").dispatchEvent(new Event("change"));
+$("acancel").onclick=()=>wrap.remove();
+$("asave").onclick=()=>{let obj={operacao:$("aop").value,polo:$("apolo").value,title:$("atitle").value,owner:$("aowner").value,due:$("adue").value,status:$("astatus").value,description:$("adesc").value};if(!obj.title.trim()){alert("Informe a ação.");return}if(i>=0)state.actions[i]=obj;else state.actions.push(obj);save()};
+}
+function showView(v){currentView=v;document.querySelectorAll(".view").forEach(x=>x.classList.toggle("hidden",x.id!==v));document.querySelectorAll(".tab").forEach(x=>x.classList.toggle("active",x.dataset.view===v));if(v==="poles")renderPole();if(v==="leaders")renderLeaders();if(v==="actions")renderActions()}
+function renderAll(){renderOverview();if(currentView==="poles")renderPole();if(currentView==="leaders")renderLeaders();if(currentView==="actions")renderActions()}
+document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>showView(b.dataset.view));
+$("fOp").addEventListener("change",()=>refreshFilters("fOp"));
+$("fCoord").addEventListener("change",()=>refreshFilters("fCoord"));
+$("fPolo").addEventListener("change",()=>refreshFilters("fPolo"));
+$("fSearch").addEventListener("input",()=>refreshFilters("fSearch"));
+$("clearFilters").addEventListener("click",()=>{
+ $("fOp").value="Todas";$("fCoord").value="";$("fPolo").value="";$("fSearch").value="";
+ populateFilters();renderAll();
+ $("filterFeedback").textContent="Filtros limpos · Exibindo todos os polos.";
+});
+$("printReport").addEventListener("click",printFilteredReport);
+$("detailPole").onchange=renderPole;$("newAction").onclick=()=>editAction(-1);
+populateFilters();renderAll();
+$("filterFeedback").textContent=`Exibindo ${selected().length} polos · ${new Set(selected().flatMap(p=>p.coordenadores)).size} coordenador(es) no recorte.`;
+</script></body></html>
