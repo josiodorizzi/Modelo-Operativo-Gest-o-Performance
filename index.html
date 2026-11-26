@@ -568,4 +568,14 @@ $("printReport").addEventListener("click",printFilteredReport);
 $("detailPole").onchange=renderPole;$("newAction").onclick=()=>editAction(-1);
 populateFilters();renderAll();
 $("filterFeedback").textContent=`Exibindo ${selected().length} polos · ${new Set(selected().flatMap(p=>p.coordenadores)).size} coordenador(es) no recorte.`;
-</script></body></html>
+</script>
+<style>
+/* V27 — alinhamento uniforme dos cinco indicadores executivos */
+#kpis{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:8px!important;align-items:stretch!important;width:100%!important}
+#kpis>.kpi{grid-column:auto!important;width:100%!important;min-width:0!important;max-width:none!important;box-sizing:border-box!important;margin:0!important;justify-self:stretch!important}
+#kpis>.kpi.salary-kpi{grid-column:auto!important;width:100%!important;min-width:0!important;max-width:none!important;justify-self:stretch!important}
+#kpis>.kpi .value{max-width:100%;white-space:nowrap;font-size:clamp(20px,1.8vw,29px)!important;letter-spacing:-.4px!important}
+@media(max-width:900px){#kpis{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}#kpis>.kpi.salary-kpi{grid-column:span 2!important}}
+@media(max-width:480px){#kpis{grid-template-columns:1fr!important}#kpis>.kpi.salary-kpi{grid-column:auto!important}}
+</style>
+</body></html>
