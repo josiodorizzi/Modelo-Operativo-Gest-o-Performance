@@ -334,7 +334,85 @@ th{background:#F2B705!important;color:#263238!important}
 <div class="panel"><div class="field"><label>Selecionar polo</label><select id="detailPole"></select></div><div id="poleDetail" style="margin-top:16px"></div></div>
 </div>
 <div id="leaders" class="view hidden">
-<div class="panel"><h2>Avaliação de performance dos coordenadores</h2><p class="sub">Cinco dimensões com pesos iguais de 20%. Informe notas de 0 a 100 com base em evidências e registros de acompanhamento.</p><div id="leaderList"></div></div>
+<div class="section-title"><div><h2>NOVO MODELO OPERATIVO | SIMULAÇÃO</h2><div class="mini">Comparativo do modelo vigente com a proposta de novo dimensionamento, separado por operação.</div></div></div>
+<div class="panel">
+ <h2>Visão geral consolidada</h2>
+ <p class="sub">Projeção para 104 polos, aplicando a faixa de base de alunos de cada unidade.</p>
+ <div class="mdo-kpis">
+  <div class="kpi"><div class="label">Polos analisados</div><div class="value">104</div><div class="hint">Operação I + Operação II</div></div>
+  <div class="kpi"><div class="label">HC modelo vigente</div><div class="value">571</div><div class="hint">Quadro previsto atual</div></div>
+  <div class="kpi"><div class="label">HC novo MDO</div><div class="value">467</div><div class="hint">Proposta da planilha</div></div>
+  <div class="kpi"><div class="label">Folha estimada atual</div><div class="value">R$ 1.155.828,73</div><div class="hint">Estimativa mensal</div></div>
+  <div class="kpi"><div class="label">Folha estimada novo MDO</div><div class="value">R$ 950.647,39</div><div class="hint">Estimativa mensal</div></div>
+  <div class="kpi mdo-saving"><div class="label">Redução estimada</div><div class="value">R$ 205.181,34</div><div class="hint">104 posições a menos · 17,75%</div></div>
+ </div>
+</div>
+<div class="mdo-ops">
+ <section class="panel mdo-operation">
+  <div class="mdo-op-head"><h2>OPERAÇÃO I</h2><span class="mdo-pill">54 polos</span></div>
+  <div class="mdo-mini-kpis">
+   <div><span>HC vigente</span><b>304</b></div><div><span>HC novo MDO</span><b>250</b></div>
+   <div><span>Folha vigente estimada</span><b>R$ 656.581,40</b></div><div><span>Folha novo MDO</span><b>R$ 545.077,97</b></div>
+   <div class="mdo-economy"><span>Redução mensal estimada</span><b>R$ 111.503,42</b></div>
+  </div>
+  <h3>Dimensionamento por função</h3>
+  <div class="table-wrap"><table class="mdo-table"><thead><tr><th>Função</th><th>HC vigente</th><th>HC novo</th><th>Salário médio ref.</th><th>Folha vigente</th><th>Folha novo MDO</th></tr></thead><tbody>
+   <tr><td>Coordenador de Polo</td><td>54</td><td>54</td><td>R$ 3.995,63</td><td>R$ 215.764,18</td><td>R$ 215.764,18</td></tr>
+   <tr><td>Auxiliar Acadêmico</td><td>113</td><td>83</td><td>R$ 1.840,57</td><td>R$ 207.984,92</td><td>R$ 152.767,68</td></tr>
+   <tr><td>Consultor Comercial</td><td>54</td><td>54</td><td>R$ 2.190,17</td><td>R$ 118.268,98</td><td>R$ 118.268,98</td></tr>
+   <tr><td>Auxiliar de Limpeza (4h)</td><td>54</td><td>54</td><td>R$ 850,69</td><td>R$ 45.937,33</td><td>R$ 45.937,33</td></tr>
+   <tr><td>Apoio Operacional</td><td>28</td><td>4</td><td>R$ 2.345,26</td><td>R$ 65.667,22</td><td>R$ 9.381,03</td></tr>
+   <tr><td>Analista Pedagógico Junior</td><td>1</td><td>1</td><td>R$ 2.958,76</td><td>R$ 2.958,76</td><td>R$ 2.958,76</td></tr>
+  </tbody><tfoot><tr><th>Total</th><th>304</th><th>250</th><th>—</th><th>R$ 656.581,40</th><th>R$ 545.077,97</th></tr></tfoot></table></div>
+  <h3>HC por faixa de base</h3>
+  <div class="table-wrap"><table class="mdo-table compact"><thead><tr><th>Faixa de alunos</th><th>Polos</th><th>HC vigente / polo</th><th>HC novo / polo</th><th>HC vigente total</th><th>HC novo total</th></tr></thead><tbody>
+   <tr><td>0–750</td><td>26</td><td>5</td><td>4</td><td>130</td><td>104</td></tr>
+   <tr><td>751–1.500</td><td>24</td><td>6</td><td>5</td><td>144</td><td>120</td></tr>
+   <tr><td>1.501–2.250</td><td>3</td><td>7</td><td>6</td><td>21</td><td>18</td></tr>
+   <tr><td>2.251–3.000</td><td>0</td><td>8</td><td>7</td><td>0</td><td>0</td></tr>
+   <tr><td>3.001–3.750</td><td>1</td><td>9</td><td>8</td><td>9</td><td>8</td></tr>
+   <tr><td>3.751–4.500</td><td>0</td><td>10</td><td>9</td><td>0</td><td>0</td></tr>
+   <tr><td>4.501–5.250</td><td>0</td><td>11</td><td>10</td><td>0</td><td>0</td></tr>
+  </tbody></table></div>
+ </section>
+ <section class="panel mdo-operation">
+  <div class="mdo-op-head"><h2>OPERAÇÃO II</h2><span class="mdo-pill">50 polos</span></div>
+  <div class="mdo-mini-kpis">
+   <div><span>HC vigente</span><b>267</b></div><div><span>HC novo MDO</span><b>217</b></div>
+   <div><span>Folha vigente estimada</span><b>R$ 499.247,33</b></div><div><span>Folha novo MDO</span><b>R$ 405.569,41</b></div>
+   <div class="mdo-economy"><span>Redução mensal estimada</span><b>R$ 93.677,92</b></div>
+  </div>
+  <h3>Dimensionamento por função</h3>
+  <div class="table-wrap"><table class="mdo-table"><thead><tr><th>Função</th><th>HC vigente</th><th>HC novo</th><th>Salário médio ref.</th><th>Folha vigente</th><th>Folha novo MDO</th></tr></thead><tbody>
+   <tr><td>Coordenador de Polo</td><td>50</td><td>50</td><td>R$ 2.878,56</td><td>R$ 143.928,19</td><td>R$ 143.928,19</td></tr>
+   <tr><td>Auxiliar Acadêmico</td><td>102</td><td>65</td><td>R$ 1.717,83</td><td>R$ 175.218,50</td><td>R$ 111.658,85</td></tr>
+   <tr><td>Consultor Comercial</td><td>50</td><td>50</td><td>R$ 2.070,10</td><td>R$ 103.504,93</td><td>R$ 103.504,93</td></tr>
+   <tr><td>Auxiliar de Limpeza (4h)</td><td>50</td><td>50</td><td>R$ 836,88</td><td>R$ 41.843,86</td><td>R$ 41.843,86</td></tr>
+   <tr><td>Apoio Operacional</td><td>15</td><td>2</td><td>R$ 2.316,79</td><td>R$ 34.751,84</td><td>R$ 4.633,58</td></tr>
+   <tr><td>Analista Pedagógico Junior</td><td>0</td><td>0</td><td>R$ 2.540,65</td><td>R$ 0,00</td><td>R$ 0,00</td></tr>
+  </tbody><tfoot><tr><th>Total</th><th>267</th><th>217</th><th>—</th><th>R$ 499.247,33</th><th>R$ 405.569,41</th></tr></tfoot></table></div>
+  <h3>HC por faixa de base</h3>
+  <div class="table-wrap"><table class="mdo-table compact"><thead><tr><th>Faixa de alunos</th><th>Polos</th><th>HC vigente / polo</th><th>HC novo / polo</th><th>HC vigente total</th><th>HC novo total</th></tr></thead><tbody>
+   <tr><td>0–750</td><td>35</td><td>5</td><td>4</td><td>175</td><td>140</td></tr>
+   <tr><td>751–1.500</td><td>13</td><td>6</td><td>5</td><td>78</td><td>65</td></tr>
+   <tr><td>1.501–2.250</td><td>2</td><td>7</td><td>6</td><td>14</td><td>12</td></tr>
+   <tr><td>2.251–3.000</td><td>0</td><td>8</td><td>7</td><td>0</td><td>0</td></tr>
+   <tr><td>3.001–3.750</td><td>0</td><td>9</td><td>8</td><td>0</td><td>0</td></tr>
+   <tr><td>3.751–4.500</td><td>0</td><td>10</td><td>9</td><td>0</td><td>0</td></tr>
+   <tr><td>4.501–5.250</td><td>0</td><td>11</td><td>10</td><td>0</td><td>0</td></tr>
+  </tbody></table></div>
+ </section>
+</div>
+<div class="panel mdo-method">
+ <h2>Premissas da simulação</h2>
+ <ul>
+  <li>O HC do novo MDO foi aplicado conforme a aba <b>PROPOSTA NOVO MO</b>, por faixa de base de alunos; o comparativo vigente usa a aba <b>MODELO OPERATIVO</b>.</li>
+  <li>Salários médios de referência calculados a partir das abas <b>DINÂMICA OP I</b> e <b>DINÂMICA OP II</b>, separadamente por operação.</li>
+  <li><b>Auxiliar de Limpeza:</b> a proposta informa regime de 4 horas/dia; para estimar, foi considerado 50% da média observada de Auxiliar de Serviços Gerais/Auxiliar de Limpeza.</li>
+  <li>Coordenador de Polo usa a média das rubricas Coordenador de Polo e Coordenador de Polo Próprio; Consultor Comercial usa Consultor de Negócios.</li>
+  <li>Valores são estimativas mensais de salário-base, sem encargos, benefícios, adicionais ou provisões. Não substituem validação de RH/Financeiro.</li>
+ </ul>
+</div>
 </div>
 <div id="actions" class="view hidden">
 <div class="section-title"><div><h2>Planos de ação por polo</h2><div class="mini">Registre oportunidades, responsáveis, prazos e status. Os dados ficam salvos neste navegador.</div></div><button class="btn" id="newAction">+ Novo plano de ação</button></div>
@@ -579,3 +657,34 @@ $("filterFeedback").textContent=`Exibindo ${selected().length} polos · ${new Se
 @media(max-width:480px){#kpis{grid-template-columns:1fr!important}#kpis>.kpi.salary-kpi{grid-column:auto!important}}
 </style>
 </body></html>
+<style>
+/* NOVO MDO — visão espelhada com indicadores e folha por operação */
+.mdo-kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:14px}
+.mdo-kpis .kpi{min-width:0}
+.mdo-kpis .kpi .value{font-size:clamp(20px,2vw,29px);white-space:nowrap}
+.mdo-kpis .mdo-saving{background:#f0f8f3;border-color:#c7e4d2}
+.mdo-kpis .mdo-saving .value{color:#16734b}
+.mdo-ops{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
+.mdo-operation{min-width:0}
+.mdo-op-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:12px}
+.mdo-op-head h2{margin:0}
+.mdo-pill{background:#fff2c6;border:1px solid #f0d27a;border-radius:20px;padding:5px 10px;font-size:12px;font-weight:800;color:#70520a;white-space:nowrap}
+.mdo-mini-kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:18px}
+.mdo-mini-kpis>div{border:1px solid var(--line);border-radius:9px;padding:10px;display:flex;flex-direction:column;gap:5px;min-width:0}
+.mdo-mini-kpis span{font-size:11px;color:var(--muted);font-weight:700}
+.mdo-mini-kpis b{font-size:17px;color:var(--navy);overflow-wrap:anywhere}
+.mdo-mini-kpis .mdo-economy{grid-column:1/-1;background:#f0f8f3;border-color:#c7e4d2}
+.mdo-mini-kpis .mdo-economy b{color:#16734b;font-size:20px}
+.mdo-operation h3{font-size:14px;color:var(--navy);margin:18px 0 8px}
+.table-wrap{width:100%;overflow-x:auto}
+.mdo-table{width:100%;border-collapse:collapse;font-size:11px;min-width:610px}
+.mdo-table th{background:#f2b705;color:#26364a;text-align:left;padding:8px 7px;font-size:10px}
+.mdo-table td{padding:8px 7px;border-bottom:1px solid var(--line);white-space:nowrap}
+.mdo-table td:first-child{white-space:normal;font-weight:700}
+.mdo-table tfoot th{background:#fff2c6;color:#26364a;padding:9px 7px;border-top:2px solid #e5b323}
+.mdo-table.compact{min-width:540px}
+.mdo-method{font-size:13px}
+.mdo-method ul{margin:8px 0 0;padding-left:20px;line-height:1.65}
+@media(max-width:1050px){.mdo-ops{grid-template-columns:1fr}.mdo-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.mdo-kpis{grid-template-columns:1fr}.mdo-kpis .kpi .value{white-space:normal}.mdo-mini-kpis{grid-template-columns:1fr 1fr}}
+</style>
