@@ -343,12 +343,25 @@ th{background:#F2B705!important;color:#263238!important}
   <div class="kpi"><div class="label">Polos no estudo</div><div class="value">104</div><div class="hint">54 Operação I · 50 Operação II</div></div>
   <div class="kpi"><div class="label">HC modelo vigente</div><div class="value">571</div><div class="hint">Quadro dimensionado atual</div></div>
   <div class="kpi"><div class="label">HC proposta NOVO MDO</div><div class="value">467</div><div class="hint">Redução de 104 posições</div></div>
-  <div class="kpi"><div class="label">Folha mensal vigente</div><div class="value">R$ 1.204.304,66</div><div class="hint">Estimativa de salário-base</div></div>
-  <div class="kpi"><div class="label">Folha mensal NOVO MDO</div><div class="value">R$ 998.652,06</div><div class="hint">Estimativa de salário-base</div></div>
-  <div class="kpi mdo-saving"><div class="label">Economia mensal estimada</div><div class="value">R$ 205.652,60</div><div class="hint">Redução estimada de 17,08%</div></div>
+  <div class="kpi"><div class="label">Folha mensal vigente</div><div class="value">R$ 1.326.593,34</div><div class="hint">Estimativa de salário-base</div></div>
+  <div class="kpi"><div class="label">Folha mensal NOVO MDO</div><div class="value">R$ 995.693,30</div><div class="hint">Estimativa de salário-base</div></div>
+  <div class="kpi mdo-saving"><div class="label">Economia mensal estimada</div><div class="value">R$ 330.900,04</div><div class="hint">Redução estimada de 24,94%</div></div>
  </div>
 </div>
 
+<div class="panel mdo-compare-panel">
+ <h2>COMPARATIVO MODELO ATUAL X NOVO MDO</h2>
+ <p class="sub">Diferença entre a folha salarial da Visão Geral (modelo atual) e a projeção da proposta NOVO MDO.</p>
+ <div class="table-wrap"><table class="mdo-table mdo-compare-table">
+  <thead><tr><th>Operação</th><th>Folha modelo atual</th><th>Folha NOVO MDO</th><th>Redução mensal</th><th>Redução %</th></tr></thead>
+  <tbody>
+   <tr><td>Operação I</td><td>R$ 756.022,32</td><td>R$ 551.440,54</td><td class="mdo-positive">R$ 204.581,78</td><td>27,06%</td></tr>
+   <tr><td>Operação II</td><td>R$ 570.571,02</td><td>R$ 444.252,76</td><td class="mdo-positive">R$ 126.318,26</td><td>22,14%</td></tr>
+  </tbody>
+  <tfoot><tr><th>TOTAL</th><th>R$ 1.326.593,34</th><th>R$ 995.693,30</th><th>R$ 330.900,04</th><th>24,94%</th></tr></tfoot>
+ </table></div>
+ <div class="mdo-compare-note"><b>Leitura executiva:</b> a Operação I concentra 61,8% da redução estimada. Valores mensais de salário-base; não incluem encargos, benefícios ou provisões.</div>
+</div>
 <div class="panel">
  <h2>Comparativo de folha por operação</h2>
  <p class="sub">Os mesmos indicadores da visão geral, agora separados entre Operação I e Operação II.</p>
@@ -358,9 +371,9 @@ th{background:#F2B705!important;color:#263238!important}
    <div class="mdo-kpis mdo-op-kpis">
     <div class="kpi"><div class="label">HC vigente</div><div class="value">304</div><div class="hint">Dimensionamento atual</div></div>
     <div class="kpi"><div class="label">HC NOVO MDO</div><div class="value">250</div><div class="hint">54 posições a menos</div></div>
-    <div class="kpi"><div class="label">Folha vigente</div><div class="value">R$ 665.880,63</div><div class="hint">Salário-base estimado/mês</div></div>
-    <div class="kpi"><div class="label">Folha NOVO MDO</div><div class="value">R$ 554.399,30</div><div class="hint">Salário-base estimado/mês</div></div>
-    <div class="kpi mdo-saving"><div class="label">Economia mensal</div><div class="value">R$ 111.481,33</div><div class="hint">Redução estimada de 16,74%</div></div>
+    <div class="kpi"><div class="label">Folha vigente</div><div class="value">R$ 756.022,32</div><div class="hint">Salário-base estimado/mês</div></div>
+    <div class="kpi"><div class="label">Folha NOVO MDO</div><div class="value">R$ 551.440,54</div><div class="hint">Salário-base estimado/mês</div></div>
+    <div class="kpi mdo-saving"><div class="label">Economia mensal</div><div class="value">R$ 204.581,78</div><div class="hint">Redução estimada de 27,06%</div></div>
    </div>
    <h3>Salário médio de referência por função</h3>
    <div class="table-wrap"><table class="mdo-table"><thead><tr><th>Função no NOVO MDO</th><th>HC vigente</th><th>HC NOVO MDO</th><th>Salário médio</th><th>Folha vigente</th><th>Folha NOVO MDO</th></tr></thead><tbody>
@@ -706,4 +719,10 @@ $("filterFeedback").textContent=`Exibindo ${selected().length} polos · ${new Se
 .mdo-method ul{margin:8px 0 0;padding-left:20px;line-height:1.65}
 @media(max-width:1100px){.mdo-ops{grid-template-columns:1fr}.mdo-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){.mdo-kpis{grid-template-columns:1fr}.mdo-kpis .kpi .value{white-space:normal}.mdo-op-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style><style>
+.mdo-compare-table{min-width:720px;font-size:13px}
+.mdo-compare-table th,.mdo-compare-table td{padding:12px 10px}
+.mdo-compare-table td:not(:first-child),.mdo-compare-table th:not(:first-child){text-align:right}
+.mdo-positive{color:#16734b;font-weight:800}
+.mdo-compare-note{margin-top:12px;padding:12px 14px;border-radius:9px;background:#fff8df;border:1px solid #f0d27a;font-size:13px;line-height:1.5}
 </style>
